@@ -1,9 +1,15 @@
 body{
     margin: auto;
 }
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+}
 .header{
     display: flex;
-    flex-direction: row;
     position: fixed;
     align-items: center;
     background: white;
@@ -19,7 +25,6 @@ body{
 .icons{
     cursor: pointer;
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 #ecosystem{
@@ -38,10 +43,8 @@ body{
 
 .navs{
     display: flex;
-    flex-direction: row;
     align-items: center;
     font-size: 17px;
-    margin: 0 100px 0 0;
     line-height: 8px;
 }
 
@@ -88,12 +91,12 @@ body{
     align-items: center;
 }
 
-.ul{
+.marketplaceInside{
     margin: 12px 0;
     cursor: pointer;
 }
 
-.ul:hover{
+.marketplaceInside:hover{
     color: deeppink;
 }
 
@@ -144,6 +147,7 @@ nav:hover{
 }
 
 #language{
+    display: flex;
     margin-right: 32px;
     border: none;
     font-size: 15px;
@@ -158,7 +162,6 @@ nav:hover{
     height: 860px;
     max-width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
@@ -167,7 +170,7 @@ nav:hover{
     display: flex;
     flex-direction: column;
     gap: 32px;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .main-big-text{
@@ -240,15 +243,15 @@ nav:hover{
 }
 .collection{
     display: flex;
+    gap: 20px;
     width: 90%;
     height: 170px;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 100px;
 }
 
-.collection1,.collection2,.collection3,.collection4,.collection5{
+.collectionItem{
     width: 288px;
     height: 233px;
     border: gainsboro 2px solid;
@@ -262,7 +265,7 @@ nav:hover{
 }
 
 
-.collectionIcon1,.collectionIcon2,.collectionIcon3,.collectionIcon4,.collectionIcon5{
+.collectionIconGeneric{
     position: absolute;
     left: 32px;
     bottom: 56px;
@@ -291,7 +294,7 @@ nav:hover{
 }
 
 
-.collection1-inside,.collection2-inside,.collection3-inside,.collection4-inside,.collection5-inside{
+.collectionsInside{
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
@@ -366,7 +369,7 @@ nav:hover{
 
 .featuresCollections{
     display: flex;
-    flex-direction: row;
+    gap: 24px;
     justify-content: space-between;
     width: 85%;
     height: 480px;
@@ -379,7 +382,6 @@ nav:hover{
     align-items: center;
     height: 100%;
     width: 33%;
-    margin: 12px;
     border-radius: 36px;
     background-color: #f7f7f7;
 }
@@ -389,6 +391,7 @@ nav:hover{
     background-repeat: no-repeat;
     width: 180px;
     height: 180px;
+    margin-bottom: 100px;
 }
 
 .featuresCollections1Image{
@@ -404,6 +407,7 @@ nav:hover{
 .featuresCollections1Title,.featuresCollections2Title,.featuresCollections3Title{
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 24px;
 }
 
 .featuresCollections1Text,.featuresCollections2Text,.featuresCollections3Text{
@@ -413,19 +417,12 @@ nav:hover{
     padding: 8px;
 }
 
-.buyNFt{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding: 30px 0 0 0 ;
-    height: 700px;
-}
 .buyNFtBack{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 85%;
-    height: 600px;
+    justify-content: flex-start;
+    margin: 0 110px 100px 110px;
+    padding: 200px 1320px 200px 80px;
     border-radius: 56px;
     background-image: url("/images/buy-nft-min-4.webp");
     background-size: cover;
@@ -433,11 +430,6 @@ nav:hover{
 }
 
 
-.buyNFtHead{
-    flex-direction: column;
-    justify-content: start;
-    padding: 200px 0 0 80px;
-}
 .buyNFtTitle{
     font-size: 48px;
     color: white;
@@ -475,7 +467,6 @@ nav:hover{
 
 .contentHead{
     display: flex;
-    flex-direction: row;
 }
 
 .content{
@@ -491,7 +482,7 @@ nav:hover{
 .contentHeadBody{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding-top: 100px ;
     width: 350px;
 }
@@ -517,7 +508,7 @@ nav:hover{
 }
 
 
-#contentIcon1,#contentIcon2,#contentIcon3{
+.contentIcon{
     width: 60px;
     height: 60px;
     padding: 40px 0 40px 20px;
@@ -551,7 +542,6 @@ nav:hover{
 
 .nftInfoCollections{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -585,7 +575,6 @@ nav:hover{
     height: 300px;
     background-color: #f7f7f7;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -601,7 +590,7 @@ nav:hover{
     gap: 32px;
 }
 
-.infoMarketPlace,.infoResources,.infoCompany,.Stats{
+.infoMarketPlace,.infoResources,.infoCompany,.stats{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -617,7 +606,6 @@ nav:hover{
 .footer{
     height: 115px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     box-shadow: 1px 1px slategray;
@@ -662,12 +650,12 @@ nav:hover{
 
 .chatAi{
     position: fixed;
+    bottom: 16px;
+    left: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    bottom: 16px;
-    left: 20px;
     border-radius: 36px;
     background-color: black;
     cursor: pointer;
@@ -688,12 +676,12 @@ nav:hover{
 
 .chat{
     position: fixed;
+    bottom: 16px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 4px;
-    bottom: 16px;
-    right: 20px;
     border-radius: 36px;
     background-color: deeppink;
     color: black;

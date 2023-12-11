@@ -1,0 +1,239 @@
+@media screen and (max-width: 1200px) {
+     .header .navs{
+        display: none;
+         position: relative;
+    }
+
+    #ecosystem{
+        display: none;
+    }
+
+    .line3{
+        display: flex;
+        position: absolute;
+        right: 40px;
+        top: 25px;
+    }
+
+    #basket{
+        padding: 0 80px 0 40px;
+
+    }
+
+    ._3line{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+
+    #language{
+        display: none;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 150px 30px;
+    }
+
+    .main-big-text{
+        font-size: 56px;
+    }
+
+    .main-text{
+        width: 400px;
+    }
+
+    .main-min{
+        height: 400px;
+    }
+
+    .main-button1{
+        padding: 10px 30px;
+    }
+
+    .main-button2{
+        padding: 10px 10px;
+        margin:  0 16px 16px 16px;
+    }
+
+    .main-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .collectionsName,.collection{
+        padding: 24px 0;
+        display: grid;
+        grid-auto-flow:column;
+        overflow-x: auto;
+        height: 100%;
+        font-size: 26px;
+    }
+
+    .collection{
+        min-width: 100%;
+        margin: 16px;
+    }
+
+    .nftArtist{
+        background-position-x: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 900px;
+    }
+
+    .artistMain{
+        padding: 50px ;
+    }
+
+    .artistTextTitle{
+        font-size: 32px;
+        width: 240px;
+    }
+    .artistText{
+        font-size: 16px;
+        line-height: 24px;
+        width: 440px;
+    }
+    .artistButton{
+        padding: 12px 20px;
+    }
+
+    .features{
+        height: 1300px;
+        justify-content: flex-start;
+    }
+    .featuresText{
+        font-size: 30px;
+        width: 60%;
+    }
+
+    .featuresCollections{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .featuresCollections1,.featuresCollections2,.featuresCollections3{
+        width: 80%;
+        padding-top: 50px;
+    }
+
+    .featuresCollections1Image,.featuresCollections2Image,.featuresCollections3Image{
+        width: 120px;
+        height: 120px;
+    }
+
+    .buyNFtBack{
+        background-position-x: center;
+        background-size: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 110px 80px;
+        padding: 100px 290px 700px 30px;
+    }
+
+    .buyNFtTitle{
+        font-size: 32px;
+    }
+
+    .buyNFtText{
+        font-size: 16px;
+        width: 400px;
+        line-height: 20px;
+    }
+
+    .buyNFtButton{
+        padding: unset;
+        width: 120px;
+        height: 40px;
+    }
+
+    .getStarted{
+        height: auto;
+    }
+
+    .contentHead{
+        flex-direction: column;
+    }
+
+    .contentHeadBody{
+        padding-top: 60px;
+        width: 60%;
+    }
+
+    .contentTextTitle{
+        margin-bottom: 36px;
+        font-size: 32px;
+        width: 330px;
+    }
+
+    .contentHeadBodyButton{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .contentText{
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .nftInfo{
+        height: auto;
+    }
+
+    .nftInfoTitle{
+        font-size: 32px;
+        padding: 100px 0 50px 0;
+    }
+
+    .nftInfoCollections{
+        flex-direction: column;
+    }
+
+    .nftInfoCollection1,.nftInfoCollection2,.nftInfoCollection3{
+        background-size: cover;
+        background-position: center;
+        width: 350px;
+        height: 350px;
+    }
+
+    .info{
+        height: auto;
+        flex-direction: column;
+        padding: 36px;
+    }
+
+    .infoNft{
+        padding-bottom: 36px;
+    }
+
+    .infoGrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 24px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 32px;
+        height: 250px;
+    }
+
+
+    .footerText1{
+        margin-right: unset;
+        padding: 0 25px;
+        width: 300px;
+    }
+    .footerText{
+        padding: 0 20px;
+    }
+    .footerIcons{
+        margin-left: unset ;
+        padding: 0  ;
+    }
+}
