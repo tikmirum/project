@@ -40,14 +40,16 @@
 
     .main-big-text{
         font-size: 56px;
+        width: 100%;
     }
 
     .main-text{
-        width: 400px;
+        width: 100%;
     }
 
     .main-min{
         height: 400px;
+        width: 100%;
     }
 
     .main-button1{
@@ -69,13 +71,17 @@
         grid-auto-flow:column;
         overflow-x: auto;
         height: 100%;
-        font-size: 26px;
+    }
+
+    .collectionsName{
+        font-size: 28px;
+        padding: 0;
     }
 
     .collection{
         min-width: 100%;
-        margin: 16px;
     }
+
 
     .nftArtist{
         background-position-x: right;
@@ -90,24 +96,24 @@
 
     .artistTextTitle{
         font-size: 32px;
-        width: 240px;
+        width: 100%;
     }
     .artistText{
         font-size: 16px;
         line-height: 24px;
-        width: 440px;
+        width: 100%;
     }
     .artistButton{
         padding: 12px 20px;
     }
 
     .features{
-        height: 1300px;
+        height: 1400px;
         justify-content: flex-start;
     }
     .featuresText{
         font-size: 30px;
-        width: 60%;
+        width: 100%;
     }
 
     .featuresCollections{
@@ -116,8 +122,8 @@
     }
 
     .featuresCollections1,.featuresCollections2,.featuresCollections3{
-        width: 80%;
-        padding-top: 50px;
+        width: 100%;
+        padding: 50px 0;
     }
 
     .featuresCollections1Image,.featuresCollections2Image,.featuresCollections3Image{
@@ -137,11 +143,12 @@
 
     .buyNFtTitle{
         font-size: 32px;
+        width: 100%;
     }
 
     .buyNFtText{
         font-size: 16px;
-        width: 400px;
+        width: 100%;
         line-height: 20px;
     }
 
@@ -153,6 +160,7 @@
 
     .getStarted{
         height: auto;
+        padding: 0 0 100px 0;
     }
 
     .contentHead{
@@ -167,7 +175,11 @@
     .contentTextTitle{
         margin-bottom: 36px;
         font-size: 32px;
-        width: 330px;
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
     }
 
     .contentHeadBodyButton{
@@ -183,6 +195,10 @@
 
     .nftInfo{
         height: auto;
+    }
+
+    .infoGrid{
+        display: flex;
     }
 
     .nftInfoTitle{
@@ -235,5 +251,8 @@
     .footerIcons{
         margin-left: unset ;
         padding: 0  ;
+    }
+    .chatName{
+        display: none;
     }
 }

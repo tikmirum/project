@@ -71,7 +71,7 @@ body{
     position: absolute;
     top: 30px;
     width: 90px;
-    height: 130px;
+    height: 110px;
     background-color: white;
     box-shadow: 5px 2px 3px #f7f7f7;
     display: none;
@@ -79,6 +79,9 @@ body{
     color: black;
 }
 
+.resourcesItem{
+    margin: 10px 0;
+}
 .marketplace:hover .noneMarketplace, .noneMarketplace:hover {
     display: flex;
     flex-direction: column;
@@ -89,6 +92,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
 }
 
 .marketplaceInside{
@@ -115,7 +119,7 @@ nav{
     margin:  8px;
 }
 
-a {
+a{
     text-decoration: none;
 }
 nav:hover{
@@ -258,8 +262,12 @@ nav:hover{
     border-radius: 16px;
     position: relative;
     cursor: pointer;
+    box-shadow: 1px 5px 5px #f7f7f7;
 }
 
+.collectionCurrent{
+    margin: 6px 0;
+}
 .collectionName{
     padding: 0 0 0 28px;
 }
@@ -304,26 +312,26 @@ nav:hover{
 }
 
 .collection1-inside{
-    background-image: url("/images/collection-1-background.webp")
+    background-image: url("./images/collection-1-background.webp")
 }
 .collection2-inside{
-    background-image: url("/images/collection-2-background.webp");
+    background-image: url("./images/collection-2-background.webp");
 }
 
 .collection3-inside{
-    background-image: url("/images/collection-3-background.webp");
+    background-image: url("./images/collection-3-background.webp");
 }
 
 .collection4-inside{
-    background-image: url("/images/collection-4-background.webp");
+    background-image: url("./images/collection-4-background.webp");
 }
 
 .collection5-inside{
-    background-image: url("/images/collection-5-background.webp");
+    background-image: url("./images/collection-5-background.webp");
 }
 
 .nftArtist{
-    background-image: url("/images/nft-artist-min.webp");
+    background-image: url("./images/nft-artist-min.webp");
     background-size: cover;
     background-repeat: no-repeat;
     height: 700px;
@@ -395,13 +403,13 @@ nav:hover{
 }
 
 .featuresCollections1Image{
-    background-image: url("/images/ftnft-drops-min.webp");
+    background-image: url("./images/ftnft-drops-min.webp");
 }
 .featuresCollections2Image{
-    background-image: url("/images/nft-shop-min.webp");
+    background-image: url("./images/nft-shop-min.webp");
 }
 .featuresCollections3Image{
-    background-image: url("/images/eco-min.webp");
+    background-image: url("./images/eco-min.webp");
 }
 
 .featuresCollections1Title,.featuresCollections2Title,.featuresCollections3Title{
@@ -421,10 +429,10 @@ nav:hover{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 110px 100px 110px;
-    padding: 200px 1320px 200px 80px;
+    margin: 0 100px ;
+    padding: 200px 100px;
     border-radius: 56px;
-    background-image: url("/images/buy-nft-min-4.webp");
+    background-image: url("./images/buy-nft-min-4.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -451,6 +459,7 @@ nav:hover{
     color: white;
     background-color: #262323;
     border: none ;
+    width: 16%;
 }
 
 .buyNFtButton:hover,.contentHeadBodyButton:hover{
@@ -461,6 +470,7 @@ nav:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 100px ;
     height: 700px;
     background-color:#f7f7f7 ;
 }
@@ -473,7 +483,7 @@ nav:hover{
     display: flex;
     flex-direction: column;
     margin: 8px;
-    width: 400px;
+    width: 23%;
     border-radius: 24px;
     height: 400px;
     background-color: white;
@@ -483,8 +493,8 @@ nav:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 100px ;
-    width: 350px;
+    width: 344px;
+    padding: 80px
 }
 
 .contentTextTitle{
@@ -497,7 +507,7 @@ nav:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 36px;
+    padding: 16px;
     border-radius: 36px;
     margin: 16px 0;
     cursor: pointer;
@@ -556,17 +566,17 @@ nav:hover{
 }
 
 .nftInfoCollection1{
-    background-image: url("/images/-how-to-create-an-nft.webp");
+    background-image: url("./images/-how-to-create-an-nft.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .nftInfoCollection2{
-    background-image: url("/images/hjhj.webp");
+    background-image: url("./images/hjhj.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .nftInfoCollection3{
-    background-image: url("/images/what-is-an-nft.webp");
+    background-image: url("./images/what-is-an-nft.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -590,6 +600,9 @@ nav:hover{
     gap: 32px;
 }
 
+.infoGrid{
+    display: contents;
+}
 .infoMarketPlace,.infoResources,.infoCompany,.stats{
     display: flex;
     flex-direction: column;
@@ -600,6 +613,11 @@ nav:hover{
     padding-top: 32px;
     font-size: 20px;
     font-weight: bold;
+}
+
+.infoText:hover{
+    color: deeppink;
+    cursor: pointer;
 }
 
 
@@ -700,4 +718,8 @@ nav:hover{
     color: black;
     font-size: 17px;
     font-weight: bold;
+}
+
+.chatName{
+    display: flex;
 }
